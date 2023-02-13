@@ -1,0 +1,31 @@
+Hello ^^.
+Hope you are having a good day.
+Hope I have fullfilled requirements this time.
+What has been edited after first rejection :- 
+1- Error handling for negative and zero values of width and height
+2- build script
+3- test for resizing process and resized image
+4- Try/Catch error handler for unexpected errors
+5- separating dev-dependencies and dependencies
+
+Structure :-
+dist --> consist of compiled ts files to js
+original --> consist of images to be processed
+resized --> consist of images after processing
+spec --> consist of jasmine config file
+src --> consist of (module folder that have module and middlewares - routes that have all routes - test folder - main app file which server is built in)
+
+Scripts involved :- 
+format --> to apply prettier options and modify code style
+lint --> to check syntax and provide errors if exist
+test --> first to build app and compile it to JS then to test it with jasmine
+start --> starts the app 
+
+Endpoints involved :-
+http://localhost:5000/api/image/resize?name=&width=&height=
+this url takes name, width and height to resize the image with this name to that specific width and height
+
+Middlewares :-
+in this app there are two middlewares:
+1- queryValidation --> this ensures the data is entered and check file path before processing the image
+2- existValidation --> this ensures that this image haven't been processed before

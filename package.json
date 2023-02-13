@@ -1,0 +1,39 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.ts",
+  "scripts": {
+    "format": "prettier --config .prettierrc --write ./src/**",
+    "lint": "eslint ./src/**",
+    "build": "npx tsc",
+    "test": "npx tsc & jasmine",
+    "start": "nodemon ./src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.31.2",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.16",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "@types/jasmine": "^4.3.1",
+    "@types/sharp": "^0.31.0",
+    "nodemon": "^2.0.20",
+    "eslint": "^8.30.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  }
+}
